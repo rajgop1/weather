@@ -1,0 +1,263 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(31, 29, 29);
+    
+}
+#navbar{
+    display: flex;
+    width:100vw;
+    background-color: rgb(39, 35, 35);
+    color:white;
+    
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 0px 3px rgb(230, 240, 101);
+    position: relative;
+    z-index: 8;
+    user-select: none;
+  }
+  .left,.right{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    font-size:1.3rem;
+  }
+  #searchbutton{
+    width:100px;
+    height:2.5rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: rgb(123, 236, 11);
+    text-shadow: 0px 0px 3px rgb(51, 46, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #searchbutton:hover{
+    box-shadow: 0px 0px 10px -1px rgb(130, 255, 57);
+    
+  }
+  #searchbox{
+    padding: 5px;
+    padding-left:10px ;
+    border-radius: 10px;
+    font-size:1.1rem;
+    outline:none;
+    border:none;
+  
+  }
+  #Home,#Aboutus{
+    padding: 20px;
+   
+  }
+  #Home:hover,#Aboutus:hover{
+  background-color: white;
+   color:black;
+   cursor: pointer;
+  }
+  #main{
+    display: flex;
+    min-height:80vh;
+    background-color: rgb(51, 50, 50);
+  }
+  #container{
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    
+  }
+  .city{
+    color:white;
+    font-size: 3rem;
+  }
+  #degreec{
+    color:white;
+    font-size: 3rem;
+  }
+  #degreef{
+    color:white;
+    font-size: 3rem;
+  }
+  #weather{
+    color:white;
+    font-size: 3rem;
+  }
+  .error{
+    color:red;
+    font-weight: bolder;
+  }
+  #icon{
+    display: flex;
+    align-items: center;
+  }
+  #logo >*{
+    padding: 10px;
+  }
+  .alert{
+    position: fixed;
+    top:0;
+    z-index: 3;
+    height:100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .msg{
+    height:min(20%,300px);
+    width: min(60%,500px);
+    background-color: rgb(168, 191, 235);
+    box-shadow: 0px 0px 10px 0px rgb(47, 44, 44);
+    position: relative;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cross{
+    cursor: pointer;
+    position: absolute;
+    height:50px;
+    width: 50px;
+    background-color: red;
+    right:-10px;
+    top:-10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .cr1{
+   height:80%;
+   width:5px;
+   background-color: white;
+  transform: rotate(45deg);
+  transform-origin:50% 60%;
+  }
+  .cr2{
+   height:80%;
+   width:5px;
+   background-color: white;
+  transform: rotate(-45deg);
+  
+  transform-origin:50% 60%;
+  }
+  .menuhide{
+    display: none;
+  }
+  .remove{
+    display: none;
+  }
+  .msgboxdata{
+    font-size: 3rem;
+    color: white;
+  }
+  #footer{
+    width: 100vw;
+    background-color: rgb(24, 22, 22);
+    color: white;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 3px rgb(230, 240, 101);
+  
+    align-items: center;
+    z-index: 8;
+  }
+  .mid{
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 2rem;
+    
+
+  }
+  #overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    background-color: rgba(0, 0, 0,0.5);
+
+  }
+#video{
+  position: absolute;
+  z-index: -3;
+}
+  @media screen and (max-width:800px){
+    #navbar{
+      justify-content: center;
+      position: relative;
+      height:60px;
+    } 
+    .mid{
+      display: none;
+    }
+    .menuhide{
+      right: 10px;
+      position: absolute;
+      display: block;
+      height: 50px;
+      border: 20%;
+      cursor: pointer;
+      
+      box-shadow: 0px 0px 5px 0px black;
+      width: 60px;
+      background-color: rgb(44, 40, 40);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap:8px;
+    }
+    .row{
+      width:80%;
+      height: 5px;
+      border-radius: 10%;
+      background-color: white;
+    } 
+    
+    .Home,.Aboutus{
+      display: none;
+    }
+    .left{
+      position: relative;
+    }
+    .menuitem{
+      position: absolute;
+      bottom: -150px;
+      right: 0;
+      background-color: rgb(32, 29, 29);
+      width: 150px;
+      height: 150px;
+      font-size: 1.5rem;
+      text-align: right;
+      box-shadow: 0px 0px 5px 0px rgb(39, 36, 36);
+      display: none;    
+    }
+    .menuitemdisp{
+      display: block;
+    }
+    .menuitem>*{
+      padding: 10px;
+      margin-top: 10px;
+    }
+    .menuitem>*:hover{
+      background-color: blanchedalmond;
+      color: black;
+
+
+    }
+  }
+  

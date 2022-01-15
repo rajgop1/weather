@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="weathericon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="navbar">
+
+            <div class="left">
+                <div id="logo">
+                    <img src="weathericon.png" height="30px" width="40px" alt="">
+                </div>
+                <div class="Home Homeformobile">Home</div>
+                <div class="Aboutus Aboutusformobile">About Us</div>
+            </div>
+            <div id="appheading" class="mid">
+                Weather App    
+            </div>
+            <div class="right">
+                <div id="Searchcity">
+                    <input title="Type City Name..." id="searchbox" type="text" placeholder="Search..." />
+                </div>
+                <div id="searchbutton">Search</div>
+            </div>
+            <div id="menyburg" class="menuhide menudisp">
+                <div id="menyitem" class="menuitem">
+                    <div>Home</div>
+                    <div>About Us</div>
+                </div>
+                <div class="row row1"></div>
+                <div class="row row2"></div>
+                <div class="row row3"></div>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="container">
+            <div id="overlay"></div>
+            <div id="video">
+                <video height="100%" width=100% src="weathervideo.mp4"  muted autoplay></video>
+            </div>
+            <div id="city" class="city">
+                Please Enter a city
+            </div>
+            <div id="icon">
+                <div id="weather">
+                    
+                </div>
+                <img id="iconimage" src="" alt="">
+            </div>
+            <div id="degreec">
+
+            </div>
+            <div id="degreef">
+
+            </div>
+        </div>
+    </div>
+    <div id="alertbox" class="alert remove">
+        <div id="msgbox" class="msg">
+            <div class="msgboxdata">Please Enter a City...</div>
+            <div class="cross">
+                <div class="cr1"></div>
+                <div class="cr2"></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        &copy; ragopal jakhmola
+    </div>
+
+    <script src="api.js"> </script>
+    <script src="app.js" defer> </script>
+</body>
+
+</html>
