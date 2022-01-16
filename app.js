@@ -31,7 +31,7 @@ searchbox.addEventListener("click",()=>{
              humidity:data.main.humidity,
              degreec:degreecelc,
              degreef:degreefarah,
-             icon:"http://openweathermap.org/img/wn/"+data.weather[0].icon+"@2x.png"
+             icon:"https://openweathermap.org/img/wn/"+data.weather[0].icon+"@2x.png"
          }
          city.textContent=`City: ${results.city}`
          iconimage.setAttribute("src",`${results.icon}`)
